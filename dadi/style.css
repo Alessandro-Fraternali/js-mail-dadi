@@ -1,0 +1,33 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadorosso, .dadoblu {
+  height: 148px;
+  width: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.dadorosso {
+  background-image: url(img/dr.png);
+}
+
+.dadoblu {
+  background-image: url(img/db.png);
+}
+
+#p, #s {
+  font-size: 90px;
+}
