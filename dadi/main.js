@@ -11,9 +11,9 @@ document.getElementById("s").innerHTML =db;
 
 // dichiarazione del vincitore
 if (db > dr) {
-  alert("Il dado BLU vince!")
+  document.getElementById("dichiarazione").innerHTML ="Il dado BLU vince!";
 } else if (dr > db){
-  alert("Il dado ROSSO vince!")
+  document.getElementById("dichiarazione").innerHTML ="Il dado ROSSO vince!";
 } else if (dr == db) {
-  alert("Parità!")
+  document.getElementById("dichiarazione").innerHTML ="Parità!";
 }

@@ -31,3 +31,9 @@ body {
 #p, #s {
   font-size: 90px;
 }
+
+.risultato {
+  position: fixed;
+  bottom: 100px;
+  margin:auto;
+}
