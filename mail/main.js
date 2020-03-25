@@ -1,16 +1,19 @@
 // mail autorizzate
-var autorizzati = ["gigi@gigio.com", "gianni@gianno.com", "asdrubale@sanchez.com"];
-var controllo
+var autorizzati = ["admin", "gigi@gigio.com", "gianni@gianno.com", "asdrubale@sanchez.com"];
 
 // inserimento mail utente
-var a = prompt("Inserisci la tua email");
+var utente = prompt("Inserisci la tua email");
 
-// controllo della mail
+// variabili per dichiarazione
+var autorizzato = "Benvenuto!";
+var nonautorizzato = "Accesso negato";
+
+// dichiarazione per mail non autorizzata
+document.getElementById("dichiarazione").innerHTML = nonautorizzato;
+
+// confronto tra mail e array e stampa del messaggio di benvenuto
 for (var i = 0; i < autorizzati.length; i++) {
-  controllo = autorizzati[i];
-  if(controllo == a){
-    alert("Benvenuto");
-  }else {
-    alert("Accesso negato")
+  if(autorizzati[i] == utente){
+  document.getElementById("dichiarazione").innerHTML = autorizzato;
   }
 }
